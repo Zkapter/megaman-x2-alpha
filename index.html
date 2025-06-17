@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Texterstellung & Datenerfassung</title>
+    <link rel="icon" type="image/png" href="assets/site-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/site-icon.png" alt="Website Icon" class="icon">
+        <h1 data-i18n="title">Anonyme Texterstellung</h1>
+        <div class="language-switcher">
+            <button onclick="setLanguage('de')">DE</button>
+            <button onclick="setLanguage('en')">EN</button>
+        </div>
+    </header>
+    <main>
+        <form id="dataForm">
+            <label for="userInput" data-i18n="input_label">Gib deinen Text ein:</label><br>
+            <textarea id="userInput" name="userInput" rows="5" cols="50"></textarea><br>
+            <button type="submit" data-i18n="submit_button">Absenden</button>
+        </form>
+        <section>
+            <h2 data-i18n="output_title">Anonymisierter Text</h2>
+            <div id="outputText">...</div>
+        </section>
+        <footer>
+            <p data-i18n="user_count">Anzahl der Benutzer:</p> <span id="userCounter">0</span>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #e3dccc;
+    padding: 20px;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icon {
+    width: 48px;
+    height: 48px;
+}
+.language-switcher {
+    margin-left: auto;
+}
+textarea {
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #555;
+}
+button {
+    background-color: #804000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
